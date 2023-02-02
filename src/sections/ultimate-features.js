@@ -64,7 +64,12 @@ const UltimateFeatures = () => {
         />
         <Box sx={styles.features}>
           {data?.map((item) => (
-            <Feature key={item.id} className="feature-item" data={item} />
+            <Feature
+              key={item.id}
+              index={item.id}
+              className="feature-item"
+              data={item}
+            />
           ))}
         </Box>
       </Container>

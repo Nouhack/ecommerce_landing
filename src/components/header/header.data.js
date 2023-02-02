@@ -1,22 +1,22 @@
 export default [
   {
-    path: 'home',
-    label: 'Home',
+    path: "home",
+    label: "الرئيسية",
   },
   {
-    path: 'testimonials',
-    label: 'Testimonials',
+    path: "features",
+    label: "الحل لي يليق بيك",
   },
   {
-    path: 'features',
-    label: 'Features',
+    path: "services",
+    label: "المزايا",
   },
   {
-    path: 'services',
-    label: 'Services',
+    path: "faq",
+    label: "الأسئلة الشائعة",
   },
   {
-    path: 'faq',
-    label: 'Faq',
+    path: "testimonials",
+    label: "آراء تاع الزبائن",
   },
 ];

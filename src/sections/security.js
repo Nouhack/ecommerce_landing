@@ -37,13 +37,16 @@ const styles = {
     alignItems: "center",
     gap: [null, null, null, 6, 14],
     flexDirection: ["column-reverse", null, null, "unset"],
-    gridTemplateColumns: ["1fr", null, null, "repeat(2, 1fr)", "1fr 470px"],
+    gridTemplateColumns: ["1fr", null, null, "repeat(2, 1fr)", "1fr 2fr"],
   },
   heading: {
+    fontFamily: "'Noto Sans Arabic', sans-serif",
+    fontWeight: "bold",
     textAlign: ["center", null, null, "right"],
     h3: {
       fontSize: [3, null, null, 8, 11],
       lineHeight: 1.53,
+      fontFamily: "'Noto Sans Arabic', sans-serif",
     },
   },
   illustration: {

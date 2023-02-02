@@ -39,14 +39,16 @@ export default function Header() {
               أشري دوكا
             </Button>
             <nav as="nav" sx={styles.navbar}>
-              {menuItems.map(({ path, label }, i) => (
-                <NavLink
-                  key={i}
-                  path={path}
-                  label={label}
-                  className={state.isSticky ? "is-sticky" : ""}
-                />
-              ))}
+              {menuItems
+                .map(({ path, label }, i) => (
+                  <NavLink
+                    key={i}
+                    path={path}
+                    label={label}
+                    className={state.isSticky ? "is-sticky" : ""}
+                  />
+                ))
+                .reverse()}
             </nav>
             <Logo isSticky={state.isSticky} sx={styles.logo} />
             <NavbarDrawer isSticky={state.isSticky} />
@@ -64,6 +66,7 @@ const styles = {
     left: 0,
     right: 0,
     py: [5],
+    fontFamily: "'Noto Sans Arabic', sans-serif",
     transition: "all 0.3s ease-in-out 0s",
     "&.is-sticky": {
       backgroundColor: "white",
@@ -83,7 +86,7 @@ const styles = {
       color: "white",
       cursor: "pointer",
       display: ["flex"],
-      fontWeight: 400,
+      fontWeight: 600,
       padding: 0,
       transition: "all 0.3s ease-in-out 0s",
       "+ a": {

@@ -31,7 +31,14 @@ const Banner = () => {
             <h2 style={{ color: "red" }}>تتغلق</h2>
             بلا سبّة ؟
           </Heading>
-          <Text as="p" style={{ color: "green", fontWeight: "bold" }}>
+          <Text
+            as="p"
+            style={{
+              color: "green",
+              fontWeight: "bold",
+              fontFamily: "'Noto Sans Arabic', sans-serif",
+            }}
+          >
             الحل هو لازملك متجر إلكتروني خاص بيك وحدك
           </Text>
           <Flex sx={styles.buttonGroup}>
@@ -96,6 +103,8 @@ const styles = {
       color: "white",
       fontSize: [7, null, null, 12, 14],
       lineHeight: 1.35,
+      fontFamily: "'Noto Sans Arabic', sans-serif",
+      fontWeight: "bold",
     },
     p: {
       color: rgba("white", 0.8),
@@ -111,6 +120,7 @@ const styles = {
     zIndex: 2,
     button: {
       px: ["12px", null, null, "18px"],
+      fontFamily: "'Noto Sans Arabic', sans-serif",
     },
   },
   btnPrimary: {},
@@ -126,6 +136,6 @@ const styles = {
     transform: ["scale(1.20)", null, null, "none"],
     alignItems: "center",
     display: "flex",
-    marginTop: [2, null, null, -4, -5],
+    marginTop: [2, null, null, -4, 5],
   },
 };
